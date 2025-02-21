@@ -42,7 +42,7 @@ export const translateText = async (sourceLang, targetLang, text) => {
     const translator = await initializeTranslator(sourceLang, targetLang);
 
     if (!translator) {
-      return `Translation from ${sourceLang.toUpperCase()} to ${targetLang.toUpperCase()} is not available.`;
+      return `Translation from ${sourceLang.toUpperCase()} to ${targetLang.toUpperCase()} is not available on this device.`;
     }
 
     const translatedText = await translator.translate(text);

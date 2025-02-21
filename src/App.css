@@ -1,7 +1,7 @@
 main {
 	width: 100%;
 	margin: auto;
-	max-height: 100vh;
+	min-height: 100vh;
 }
 
 header {
@@ -11,6 +11,7 @@ header {
 	width: 90%;
 	margin: 0 auto;
 	padding: 20px;
+	box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.05);
 }
 
 header button {
@@ -59,8 +60,12 @@ header button:hover, .translate-btn:hover {
 }
 
 .welcome h2 {
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: 700;
+}
+
+h2 span {
+	color: #007bff;
 }
 
 .welcome p {
@@ -78,13 +83,12 @@ header button:hover, .translate-btn:hover {
 
 .message-body {
 	height: 100%;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 
 .message {
 	display: flex;
 	flex-direction: column;
-	/* border: solid red; */
 	margin-bottom: 20px;
 }
 
@@ -97,6 +101,7 @@ header button:hover, .translate-btn:hover {
 	letter-spacing: 2px;
 	line-height: 25px;
 	color: black;
+	max-width: 500px;
 }
 
 .message-btns {
@@ -153,16 +158,10 @@ select {
 	letter-spacing: 2px;
 	line-height: 25px;
 	color: black;
+	max-width: 500px;
 }
 
 .loading-text {
-		/* background-color: #e5e5ea; */
-		align-self: flex-start;
-		/* border-radius: 20px 20px 20px 0;
-		padding: 10px;
-		word-wrap: break-word;
-		letter-spacing: 2px;
-		line-height: 25px; */
 		color: gray;
 }
 

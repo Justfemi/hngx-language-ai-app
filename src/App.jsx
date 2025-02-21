@@ -134,7 +134,7 @@ function App() {
         <div className="message-container">
           {showWelcome && messages.length === 0 && (
             <div className="welcome">
-              <h2>Enter text to detect, translate, or summarize!</h2>
+              <h2>Enter text to <span>detect, translate,</span> or <span>summarize</span>!</h2>
               <p>Your smart language assistant is here to help! Detect languages, translate effortlessly, and summarize text with ease. Start by typing your message below.</p>
             </div>
           )}
