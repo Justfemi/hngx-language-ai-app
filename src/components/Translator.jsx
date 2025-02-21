@@ -29,6 +29,10 @@ export const initializeTranslator = async (sourceLang, targetLang) => {
 export const translateText = async (sourceLang, targetLang, text) => {
   if (!text.trim()) return "No text provided for translation.";
 
+  if (sourceLang === "Error") {
+    return "Translation API isn't available on your device.";
+  }
+
   const availableLanguages = ["en", "es", "pt", "ru", "tr", "fr"];
 
   if (

@@ -171,8 +171,11 @@ function App() {
                     </button>
                   </div>
                 </div>
-                <p className="language">Language: <span>{msg.detectedLanguage}</span></p>
-                {msg.error && <p className="message-error">{msg.error}</p>}
+                {msg.error ? (
+                  <p className="message-error">{msg.error}</p>
+                ) : (
+                  <p className="language">Language: <span>{msg.detectedLanguage}</span></p>
+                )}
                 {loadingTranslation === index ? <p className="loading-text">Translating...</p> : msg.translatedText && <p className="received-message">{msg.translatedText}</p>}
               </div>
             ))}
