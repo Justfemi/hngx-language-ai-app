@@ -4,8 +4,8 @@ import { Send } from "lucide-react";
 import {
   initializeLanguageDetector,
   detectLanguage,
-} from "./Components/Detector";
-import { initializeTranslator, translateText } from "./Components/Translator";
+} from "./components/Detector";
+import { initializeTranslator, translateText } from "./components/Translator";
 import logo from "/logo.png";
 
 function App() {
